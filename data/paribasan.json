@@ -1,0 +1,50 @@
+[
+  {
+    "proverb": "Becik ketitik, ala ketara",
+    "meaning": "Kebaikan akan terbukti, keburukan akan terlihat",
+    "category": "Karma",
+    "logic": "Truth eventually surfaces. Jangan capek-capek pencitraan atau menyembunyikan bangkai."
+  },
+  {
+    "proverb": "Jer basuki mawa bea",
+    "meaning": "Setiap keberhasilan membutuhkan biaya/pengorbanan",
+    "category": "Ekonomi/Usaha",
+    "logic": "No free lunch. Sukses butuh modal (uang, tenaga, waktu). Kalau mau gratisan, mimpi saja."
+  },
+  {
+    "proverb": "Anak polah bapak kepradah",
+    "meaning": "Anak bertingkah, bapak kena getahnya",
+    "category": "Keluarga/Tanggung Jawab",
+    "logic": "Inherited liability. Reputasi orang tua tersandera oleh kelakuan anak."
+  },
+  {
+    "proverb": "Desa mawa cara, negara mawa tata",
+    "meaning": "Desa punya adat, negara punya hukum",
+    "category": "Hukum/Sosial",
+    "logic": "Jurisdiction logic. Hormati aturan lokal (adat) di mana kamu berpijak, tapi sadari hukum negara di atasnya."
+  },
+  {
+    "proverb": "Witing tresna jalaran saka kulina",
+    "meaning": "Cinta tumbuh karena terbiasa",
+    "category": "Romansa/Psikologi",
+    "logic": "Exposure effect. Cinta bukan magic, tapi hasil interaksi berulang (looping interaction)."
+  },
+  {
+    "proverb": "Nabok nyilih tangan",
+    "meaning": "Memukul meminjam tangan orang lain",
+    "category": "Politik/Strategi",
+    "logic": "Proxy war. Menyerang musuh tanpa kotor tangan sendiri, pakai orang lain."
+  },
+  {
+    "proverb": "Kebo nyusu gudel",
+    "meaning": "Kerbau menyusu pada anak kerbau",
+    "category": "Pendidikan",
+    "logic": "Orang tua/senior belajar pada yang muda/junior. Jangan gengsi belajar teknologi dari Gen Z."
+  },
+  {
+    "proverb": "Yitna yuwana, lena kena",
+    "meaning": "Yang waspada selamat, yang lengah celaka",
+    "category": "Keamanan",
+    "logic": "Zero trust security. Kewaspadaan adalah satu-satunya jaminan keselamatan."
+  }
+]

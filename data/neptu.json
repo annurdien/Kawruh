@@ -1,0 +1,15 @@
+[
+  { "type": "dina", "name": "Minggu", "value": 5, "element": "Mega (Awan)" },
+  { "type": "dina", "name": "Senin", "value": 4, "element": "Kembang (Bunga)" },
+  { "type": "dina", "name": "Selasa", "value": 3, "element": "Geni (Api)" },
+  { "type": "dina", "name": "Rabu", "value": 7, "element": "Godhong (Daun)" },
+  { "type": "dina", "name": "Kamis", "value": 8, "element": "Angin" },
+  { "type": "dina", "name": "Jumat", "value": 6, "element": "Banyu (Air)" },
+  { "type": "dina", "name": "Sabtu", "value": 9, "element": "Bumi (Tanah)" },
+  
+  { "type": "pasaran", "name": "Legi", "value": 5, "direction": "Timur", "trait": "Optimis" },
+  { "type": "pasaran", "name": "Pahing", "value": 9, "direction": "Selatan", "trait": "Ambisius" },
+  { "type": "pasaran", "name": "Pon", "value": 7, "direction": "Barat", "trait": "Keras Hati" },
+  { "type": "pasaran", "name": "Wage", "value": 4, "direction": "Utara", "trait": "Kaku/Stabil" },
+  { "type": "pasaran", "name": "Kliwon", "value": 8, "direction": "Pusat", "trait": "Spiritual/Kompleks" }
+]
