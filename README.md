@@ -128,7 +128,7 @@ Knowledge is only acquired through practice (implementation).
 Thank you to everyone who has contributed to preserving Javanese wisdom:
 
 <!-- Add your name here when you contribute! -->
-- **[Your Name]** - [Brief contribution]
+- **@annurdien** - Initiate the project
 
 Want to be listed here? [Contribute to Kawruh!](CONTRIBUTING.md)
 
