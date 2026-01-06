@@ -46,5 +46,95 @@
     "meaning": "Yang waspada selamat, yang lengah celaka",
     "category": "Keamanan",
     "logic": "Zero trust security. Kewaspadaan adalah satu-satunya jaminan keselamatan."
+  },
+  {
+    "proverb": "Aja kuminter mundak keblinger",
+    "meaning": "Jangan merasa terlalu pintar, nanti tersesat",
+    "category": "Perilaku/Etika",
+    "logic": "Dunning-Kruger effect. Overconfidence adalah awal kegagalan. Stay humble, stay learning."
+  },
+  {
+    "proverb": "Mikul dhuwur mendhem jero",
+    "meaning": "Menjunjung tinggi (kehormatan orang tua), mengubur dalam (aibnya)",
+    "category": "Keluarga/Tanggung Jawab",
+    "logic": "Family honor system. Anak wajib protect reputasi orang tua, hide their shame, amplify their good deeds."
+  },
+  {
+    "proverb": "Sura dira jayaningrat, lebur dening pangastuti",
+    "meaning": "Kekuatan dan keberanian yang mengerikan, luluh oleh kata-kata yang lemah lembut",
+    "category": "Diplomasi",
+    "logic": "Soft power > hard power. Kata-kata yang sopan bisa menaklukkan yang kata-kata kasar tidak bisa."
+  },
+  {
+    "proverb": "Ngundhuh wohing pakarti",
+    "meaning": "Memetik hasil perbuatan",
+    "category": "Karma",
+    "logic": "Harvest what you plant. Hidup adalah akumulasi keputusan. Kalau hasil jelek, cek bibit yang ditanam."
+  },
+  {
+    "proverb": "Aja adigang, adigung, adiguna",
+    "meaning": "Jangan sombong karena punya kekuatan, jabatan, atau kepintaran",
+    "category": "Perilaku/Etika",
+    "logic": "Triple threat of arrogance. Power, position, intelligence tanpa humility = toxic combination."
+  },
+  {
+    "proverb": "Aja gumunan, aja getunan, aja kagetan, aja aleman",
+    "meaning": "Jangan mudah kagum, menyesal, kaget, atau manja",
+    "category": "Mental/Stoicism",
+    "logic": "Emotional regulation framework. Kontrol emosi adalah kontrol hidup. Stoicism versi Jawa."
+  },
+  {
+    "proverb": "Rukun agawe santosa",
+    "meaning": "Kerukunan membuat kuat",
+    "category": "Sosial/Kolaborasi",
+    "logic": "Unity is strength. Team yang solid > individu genius yang ego. Collaboration multiplier effect."
+  },
+  {
+    "proverb": "Menang tanpa ngasorake",
+    "meaning": "Menang tanpa merendahkan",
+    "category": "Kompetisi/Etika",
+    "logic": "Win with grace. True victory adalah menang tanpa bikin musuh. Humble in victory, graceful in defeat."
+  },
+  {
+    "proverb": "Sepi ing pamrih, rame ing gawe",
+    "meaning": "Kosong dari pamrih, banyak bekerja",
+    "category": "Kerja/Dedikasi",
+    "logic": "Work without attachment to results. Focus on process, not reward. Karma Yoga versi Jawa."
+  },
+  {
+    "proverb": "Nglurug tanpa bala, menang tanpa ngasorake, sekti tanpa aji-aji, sugih tanpa bandha",
+    "meaning": "Maju tanpa pasukan, menang tanpa merendahkan, sakti tanpa mantra, kaya tanpa harta",
+    "category": "Filosofi/Spiritual",
+    "logic": "Ultimate leadership paradox. Kekuatan sejati tidak terlihat (authority, charisma, wisdom, generosity)."
+  },
+  {
+    "proverb": "Aja pethak-pethuk, kudu patuh-patuh",
+    "meaning": "Jangan saling menghalangi, harus saling menuruti",
+    "category": "Keluarga/Harmoni",
+    "logic": "Marriage compatibility. Pasangan harus sync, bukan compete. Mutual respect > individual ego."
+  },
+  {
+    "proverb": "Datan serik lamun ketaman, datan susah lamun kelangan",
+    "meaning": "Tidak marah saat dipukul, tidak sedih saat kehilangan",
+    "category": "Mental/Stoicism",
+    "logic": "Detachment mastery. Pain is inevitable, suffering is optional. Buddhist philosophy in Javanese."
+  },
+  {
+    "proverb": "Sing waras ngalah",
+    "meaning": "Yang waras mengalah",
+    "category": "Konflik/Resolusi",
+    "logic": "Sanity test. Intelligent people pick their battles. Arguing with stupidity is waste of energy."
+  },
+  {
+    "proverb": "Ajining diri saka lathi, ajining raga saka busana",
+    "meaning": "Harga diri dari ucapan, harga badan dari pakaian",
+    "category": "Citra/Reputasi",
+    "logic": "Personal branding. Words define character, appearance defines first impression. Both matter."
+  },
+  {
+    "proverb": "Wong urip iku kudu mangerteni sangkan paraning dumadi",
+    "meaning": "Manusia hidup harus tahu dari mana dan akan kemana",
+    "category": "Eksistensial/Purpose",
+    "logic": "Origin & destination awareness. Life purpose = knowing your source (values) and direction (goals)."
   }
 ]

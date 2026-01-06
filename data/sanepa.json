@@ -40,5 +40,71 @@
     "literal_meaning": "Senyumnya pahit seperti madu",
     "actual_meaning": "Senyumnya sangat manis",
     "philosophy": "Madu itu manis. Pahitnya madu adalah kemustahilan, jadi maknanya adalah level manis tertinggi."
+  },
+  {
+    "phrase": "Omahé adoh kothak",
+    "literal_meaning": "Rumahnya jauh seperti kotak",
+    "actual_meaning": "Rumahnya sangat dekat",
+    "philosophy": "Kotak itu dekat/persegi empat. Kalau dibilang 'jauh seperti kotak', itu artinya walking distance."
+  },
+  {
+    "phrase": "Cilik gajah",
+    "literal_meaning": "Kecil seperti gajah",
+    "actual_meaning": "Sangat besar",
+    "philosophy": "Gajah adalah hewan darat terbesar. Membandingkan sesuatu yang 'kecil' dengan gajah adalah ironi untuk ukuran raksasa."
+  },
+  {
+    "phrase": "Kapinterané ngglethak",
+    "literal_meaning": "Kepintarannya berserakan",
+    "actual_meaning": "Sangat bodoh",
+    "philosophy": "Ngglethak artinya tergeletak/berserakan sembarangan. Sesuatu yang berharga (pintar) tidak mungkin dibiarkan berserakan."
+  },
+  {
+    "phrase": "Resik kaya gendhong",
+    "literal_meaning": "Bersih seperti pantat wajan (gendhong)",
+    "actual_meaning": "Sangat kotor",
+    "philosophy": "Gendhong/pantat wajan itu hitam legam kena api. Dibilang bersih = sarkasme hitam."
+  },
+  {
+    "phrase": "Meneng kaya blanak",
+    "literal_meaning": "Diam seperti ikan blanak",
+    "actual_meaning": "Sangat cerewet",
+    "philosophy": "Ikan tidak bisa bicara. Kalau dibilang diam seperti ikan, berarti dia non-stop ngomong."
+  },
+  {
+    "phrase": "Alus kaya eri",
+    "literal_meaning": "Halus seperti duri",
+    "actual_meaning": "Sangat kasar",
+    "philosophy": "Duri itu tajam dan kasar. Kalau dibilang halus seperti duri, itu sindiran untuk orang brutal."
+  },
+  {
+    "phrase": "Sregep kaya keong",
+    "literal_meaning": "Rajin seperti siput",
+    "actual_meaning": "Sangat malas/lambat",
+    "philosophy": "Keong/siput jalannya sangat lambat. Dibilang rajin = ironi untuk orang yang lelet."
+  },
+  {
+    "phrase": "Grapyak kaya jalak sungsang",
+    "literal_meaning": "Ramah seperti burung jalak terbalik",
+    "actual_meaning": "Sangat jutek/tidak ramah",
+    "philosophy": "Jalak sungsang adalah burung yang galak. Paradoks untuk orang yang attitude-nya jelek."
+  },
+  {
+    "phrase": "Cekat kaya mendem",
+    "literal_meaning": "Cekatan seperti orang mengubur",
+    "actual_meaning": "Sangat lambat",
+    "philosophy": "Mendem (mengubur) adalah pekerjaan yang pelan dan hati-hati. Ironis untuk yang lamban."
+  },
+  {
+    "phrase": "Becik kaya pating kecruwet",
+    "literal_meaning": "Bagus seperti bertebaran",
+    "actual_meaning": "Sangat berantakan/kacau",
+    "philosophy": "Pating kecruwet = berantakan. Dibilang bagus = sarkasme untuk kondisi chaos."
+  },
+  {
+    "phrase": "Gedhe kaya criwis",
+    "literal_meaning": "Besar seperti cabai rawit",
+    "actual_meaning": "Sangat kecil",
+    "philosophy": "Criwis (cabai rawit) adalah cabai paling kecil. Besar seperti cabai = tiny as hell."
   }
 ]

@@ -1,248 +1,422 @@
 [
   {
+    "id": "kb_001",
     "category": "Anatomi",
     "word": "Cangkem",
     "kerata_basa": "Dirancang supaya mingkem",
     "philosophy": "Mulut didesain default tertutup. Bicara hanya jika berbobot. Jangan asal bunyi (waton muni)."
   },
   {
+    "id": "kb_002",
     "category": "Anatomi",
     "word": "Kuping",
     "kerata_basa": "Kaku njepiping",
     "philosophy": "Telinga harus tegak/diam saat mendengar. Dilarang memotong pembicaraan (interrupting) sebelum lawan bicara selesai."
   },
   {
+    "id": "kb_003",
     "category": "Anatomi",
     "word": "Irung",
     "kerata_basa": "Irup",
     "philosophy": "Alat menghirup kehidupan. Kontrol napas adalah kontrol emosi (dasar mindfulness Jawa)."
   },
   {
+    "id": "kb_004",
     "category": "Anatomi",
     "word": "Mripat",
     "kerata_basa": "Mrih sampurna",
     "philosophy": "Melihat untuk mencari kebenaran/kesempurnaan, bukan mencari-cari kesalahan orang lain."
   },
   {
+    "id": "kb_005",
     "category": "Anatomi",
     "word": "Sirah",
     "kerata_basa": "Isine rah",
     "philosophy": "Kepala isinya darah (nyawa). Simbol kehormatan vital yang harus dijaga. Jangan gadaikan harga diri."
   },
   {
+    "id": "kb_006",
     "category": "Anatomi",
     "word": "Gulu",
     "kerata_basa": "Gumantunging ulu",
     "philosophy": "Penyangga kepala. Kehormatan seseorang bergantung pada kemana ia menoleh (berpihak)."
   },
   {
+    "id": "kb_007",
     "category": "Anatomi",
     "word": "Bokong",
     "kerata_basa": "Ambo ingkang mburi",
     "philosophy": "Bagian belakang yang lebar. Fondasi duduk. Posisi/jabatan butuh fondasi mental yang kuat/lebar agar stabil."
   },
   {
+    "id": "kb_008",
     "category": "Anatomi",
     "word": "Dengkul",
     "kerata_basa": "Dengko-dengko ngakul",
     "philosophy": "Ditekuk untuk memikul. Kaki/lutut adalah tumpuan beban hidup. Harus kuat menahan tekanan kerja."
   },
   {
+    "id": "kb_009",
     "category": "Anatomi",
     "word": "Weteng",
     "kerata_basa": "Ruwed tur peteng",
     "philosophy": "Ruwet dan gelap. Hawa nafsu makan berlebihan adalah sumber kegelapan hati dan penyakit."
   },
   {
+    "id": "kb_010",
     "category": "Siklus Hidup",
     "word": "Bocah",
     "kerata_basa": "Mangan kaya kebo, gaweane ora cacah",
     "philosophy": "Makan banyak, kerja nol. Sindiran untuk fase manusia yang belum produktif/menjadi beban ekonomi."
   },
   {
+    "id": "kb_011",
     "category": "Siklus Hidup",
     "word": "Jaka",
     "kerata_basa": "Laja-laja metu saka",
     "philosophy": "Energi yang keluar dari tiang rumah. Pemuda harus keluar dari zona nyaman/merantau untuk sukses."
   },
   {
+    "id": "kb_012",
     "category": "Siklus Hidup",
     "word": "Mantu",
     "kerata_basa": "Dieman-eman meksa metu",
     "philosophy": "Disayang-sayang akhirnya keluar juga. Orang tua harus ikhlas melepas anak menikah/mandiri."
   },
   {
+    "id": "kb_013",
     "category": "Siklus Hidup",
     "word": "Sepuh",
     "kerata_basa": "Sabdane ampuh",
     "philosophy": "Ucapannya manjur/berisi. Tua itu status fisik, 'Sepuh' itu status kualitas bicara dan wisdom."
   },
   {
+    "id": "kb_014",
     "category": "Siklus Hidup",
     "word": "Tuwa",
     "kerata_basa": "Ngenteni metune nyawa",
     "philosophy": "Menunggu keluarnya nyawa. Pengingat brutal bahwa masa tua adalah masa transit menuju kematian."
   },
   {
+    "id": "kb_015",
     "category": "Angka & Usia",
     "word": "Selawe",
     "kerata_basa": "Seneng-senenge lanang lan wedok",
     "philosophy": "25 Tahun. Puncak vitalitas seksual dan asmara. Fase wajar untuk fokus mencari pasangan."
   },
   {
+    "id": "kb_016",
     "category": "Angka & Usia",
     "word": "Seket",
     "kerata_basa": "Seneng kethu",
     "philosophy": "50 Tahun. Suka pakai kopiah/tutup kepala. Fase kembali ke agama/spiritual, stop ambisi duniawi berlebih."
   },
   {
+    "id": "kb_017",
     "category": "Angka & Usia",
     "word": "Sewidak",
     "kerata_basa": "Sejatine wis tindak",
     "philosophy": "60 Tahun. Sejatinya sudah pergi. Bonus waktu hidup, mental harus siap mati kapan saja."
   },
   {
+    "id": "kb_018",
     "category": "Peran Sosial",
     "word": "Guru",
     "kerata_basa": "Digugu lan ditiru",
     "philosophy": "Dipercaya ucapan & dicontoh tindakan. Tanpa integritas, anda bukan guru, hanya pengajar."
   },
   {
+    "id": "kb_019",
     "category": "Peran Sosial",
     "word": "Ratu",
     "kerata_basa": "Rene padha metu",
     "philosophy": "Sini semua keluar (aspirasi/harta). Pemimpin adalah tempat muara segala urusan rakyat."
   },
   {
+    "id": "kb_020",
     "category": "Peran Sosial",
     "word": "Wanita",
     "kerata_basa": "Wani ditata",
     "philosophy": "Berani diatur. Konteks kuno: patriarki. Konteks modern: 'Wani Nata' (Berani menata kehidupan/manajemen)."
   },
   {
+    "id": "kb_021",
     "category": "Peran Sosial",
     "word": "Garwa",
     "kerata_basa": "Sigaraning nyawa",
     "philosophy": "Belahan jiwa. Istri/Suami adalah separuh nyawa. Menyakiti pasangan = menyakiti diri sendiri."
   },
   {
+    "id": "kb_022",
     "category": "Peran Sosial",
     "word": "Bapak",
     "kerata_basa": "Bab apa-apa pepak",
     "philosophy": "Segalanya lengkap. Tuntutan ayah harus serba bisa (provider, protektor, imam). Jika tidak, wibawa hilang."
   },
   {
+    "id": "kb_023",
     "category": "Peran Sosial",
     "word": "Anak",
     "kerata_basa": "Karep apa-apa kudu enak",
     "philosophy": "Maunya serba enak. Kritik terhadap sifat egois manusia yang belum dewasa, taunya menuntut hak."
   },
   {
+    "id": "kb_024",
     "category": "Peran Sosial",
     "word": "Tamu",
     "kerata_basa": "Tata krama kudu ketemu",
     "philosophy": "Bertamu adalah adu tata krama. Interaksi sosial harus punya protokol kesopanan yang jelas."
   },
   {
+    "id": "kb_025",
     "category": "Peran Sosial",
     "word": "Tangga",
     "kerata_basa": "Anggone tansah nengga",
     "philosophy": "Tetangga = Yang selalu menunggu. 'Emergency contact' paling nyata dalam hidup, bukan saudara jauh."
   },
   {
+    "id": "kb_026",
     "category": "Peran Sosial",
     "word": "Maling",
     "kerata_basa": "Njupuk amale wong sing ora eling",
     "philosophy": "Mengambil amal orang lupa. Pencuri adalah hukuman alam bagi orang pelit yang lupa sedekah/zakat."
   },
   {
+    "id": "kb_027",
     "category": "Peran Sosial",
     "word": "Sopir",
     "kerata_basa": "Ngaso yen wis mampir",
     "philosophy": "Istirahat kalau sudah mampir/sampai. Etika kerja: Jangan berhenti sebelum target tercapai."
   },
   {
+    "id": "kb_028",
     "category": "Lingkungan",
     "word": "Desa",
     "kerata_basa": "Dene bisa",
     "philosophy": "Ternyata bisa. Simbol kemandirian (self-sufficiency). Bisa hidup tanpa ketergantungan sistem luar."
   },
   {
+    "id": "kb_029",
     "category": "Lingkungan",
     "word": "Kutha",
     "kerata_basa": "Neku thah-thoh",
     "philosophy": "Kumpul buang uang. Kota sebagai pusat konsumerisme dan gaya hidup boros, bukan sekadar produktivitas."
   },
   {
+    "id": "kb_030",
     "category": "Benda & Makanan",
     "word": "Cangkir",
     "kerata_basa": "Nyancang pikir",
     "philosophy": "Mengikat pikiran. Minum (teh/kopi) adalah momen jeda untuk fokus dan mindfulness."
   },
   {
+    "id": "kb_031",
     "category": "Benda & Makanan",
     "word": "Kupat",
     "kerata_basa": "Ngaku lepat",
     "philosophy": "Mengaku salah. Simbol kerendahan hati mengakui kesalahan (biasanya saat Lebaran)."
   },
   {
+    "id": "kb_032",
     "category": "Benda & Makanan",
     "word": "Tebu",
     "kerata_basa": "Antebing kalbu",
     "philosophy": "Mantapnya hati. Manisnya hidup (hasil) didapat setelah menembus kulit keras dengan hati mantap."
   },
   {
+    "id": "kb_033",
     "category": "Benda & Makanan",
     "word": "Tumpeng",
     "kerata_basa": "Tumindak sing lempeng",
     "philosophy": "Perilaku lurus. Hidup harus mengerucut ke atas (Tuhan) dengan jalan yang lurus."
   },
   {
+    "id": "kb_034",
     "category": "Benda & Makanan",
     "word": "Janur",
     "kerata_basa": "Sejatine nur",
     "philosophy": "Sejatinya cahaya. Simbol pencarian petunjuk ilahi dalam pernikahan atau ritual."
   },
   {
+    "id": "kb_035",
     "category": "Benda & Makanan",
     "word": "Keris",
     "kerata_basa": "Kekeran jinis / Sinengker",
     "philosophy": "Pagar jenis / Rahasia. Harga diri dan senjata pamungkas harus disimpan rapat, bukan dipamerkan."
   },
   {
+    "id": "kb_036",
     "category": "Benda & Makanan",
     "word": "Layang",
     "kerata_basa": "Lumaku wayang",
     "philosophy": "Berjalan samar/bayangan. Tulisan/surat sering menimbulkan bias tafsir. Jangan telan mentah-mentah teks tanpa konteks."
   },
   {
+    "id": "kb_037",
     "category": "Benda & Makanan",
     "word": "Piring",
     "kerata_basa": "Sepi yen miring",
     "philosophy": "Sepi kalau miring. Piring hanya berguna saat tegak (menampung). Manusia berguna saat mentalnya stabil (tegak), kalau miring (gila/stress) jadi tidak berguna."
   },
   {
+    "id": "kb_038",
     "category": "Benda & Makanan",
     "word": "Gedhang",
     "kerata_basa": "Digeget bar madhang",
     "philosophy": "Digigit setelah makan. Pisang sebagai pencuci mulut. Tahu prioritas: selesaikan yang wajib (makan), baru yang sunnah (pisang)."
   },
   {
+    "id": "kb_039",
     "category": "Benda & Makanan",
     "word": "Kursi",
     "kerata_basa": "Yen ungkur-ungkuran padha ngisi",
     "philosophy": "Jabatan. Jika sudah saling membelakangi (pergi), tempat itu akan diisi orang lain. Jabatan itu sementara."
   },
   {
+    "id": "kb_040",
     "category": "Perilaku",
     "word": "Turu",
     "kerata_basa": "Tutup rasa",
     "philosophy": "Menutup rasa/ego. Tidur berkualitas adalah saat ego mati sementara. Jika masih gelisah, itu cuma merem."
   },
   {
+    "id": "kb_041",
     "category": "Perilaku",
     "word": "Tandur",
     "kerata_basa": "Nata karo mundur",
     "philosophy": "Menata sambil mundur. Kemajuan tidak selalu lurus ke depan. Kadang perlu mundur (mengalah/evaluasi) untuk menanam keberhasilan."
+  },
+  {
+    "id": "kb_042",
+    "category": "Perilaku",
+    "word": "Sabar",
+    "kerata_basa": "Saha kabotan nanging bar",
+    "philosophy": "Tanggung beban hingga selesai. Sabar bukan pasrah, tapi daya tahan mental sampai masalah clear."
+  },
+  {
+    "id": "kb_043",
+    "category": "Perilaku",
+    "word": "Ora",
+    "kerata_basa": "Mulane kudu nduwe rasa",
+    "philosophy": "Kata 'tidak' (ora). Makanya harus punya perasaan. Menolak harus dengan empati, bukan arogan."
+  },
+  {
+    "id": "kb_044",
+    "category": "Perilaku",
+    "word": "Eling",
+    "kerata_basa": "Weling marang awake dhewe",
+    "philosophy": "Mengingatkan diri sendiri. Self-awareness adalah kunci kontrol diri. Jangan selalu menasihati orang lain."
+  },
+  {
+    "id": "kb_045",
+    "category": "Perilaku",
+    "word": "Sungkem",
+    "kerata_basa": "Sujud ngagem",
+    "philosophy": "Membungkuk sambil memeluk (kaki orang tua). Hormat bukan cuma kata-kata, tapi fisik dan hati."
+  },
+  {
+    "id": "kb_046",
+    "category": "Peran Sosial",
+    "word": "Wong",
+    "kerata_basa": "Wajib aweh gongso",
+    "philosophy": "Manusia wajib beri kontribusi. Hidup bukan cuma ambil hak, tapi beri kewajiban pada sosial/alam."
+  },
+  {
+    "id": "kb_047",
+    "category": "Peran Sosial",
+    "word": "Kanca",
+    "kerata_basa": "Kena kanggo nyambut karya",
+    "philosophy": "Teman = Bisa diajak kerja sama. Kanca sejati adalah partner produktif, bukan cuma nongkrong."
+  },
+  {
+    "id": "kb_048",
+    "category": "Peran Sosial",
+    "word": "Musuh",
+    "kerata_basa": "Maringi susah",
+    "philosophy": "Memberi kesusahan. Musuh adalah opportunity untuk growth. Tanpa resistance, tidak ada kekuatan."
+  },
+  {
+    "id": "kb_049",
+    "category": "Siklus Hidup",
+    "word": "Urip",
+    "kerata_basa": "Kudu weruh rupa-rupa",
+    "philosophy": "Hidup = Harus tahu berbagai hal. Pengalaman beragam adalah kunci wisdom, jangan zona nyaman terus."
+  },
+  {
+    "id": "kb_050",
+    "category": "Siklus Hidup",
+    "word": "Mati",
+    "kerata_basa": "Meneng salin ati",
+    "philosophy": "Diam berganti hati. Kematian adalah transformasi, bukan akhir. Mental harus siap untuk 'mati' (melepas ego)."
+  },
+  {
+    "id": "kb_051",
+    "category": "Anatomi",
+    "word": "Tangan",
+    "kerata_basa": "Nyata ngrengkuh kabeh",
+    "philosophy": "Nyata merangkul semua. Tangan untuk bekerja dan memberi, bukan cuma menerima. Jangan cuma tangan nomplok."
+  },
+  {
+    "id": "kb_052",
+    "category": "Anatomi",
+    "word": "Ati",
+    "kerata_basa": "Amrih titis",
+    "philosophy": "Hati = Mencari titisan (ilham). Pusat emosi dan intuisi. Logika di kepala, keputusan bijak dari hati."
+  },
+  {
+    "id": "kb_053",
+    "category": "Perilaku",
+    "word": "Gawe",
+    "kerata_basa": "Gawanen yen wus wenang",
+    "philosophy": "Kerjakan jika sudah bisa. Jangan overpromise. Bekerja dengan kemampuan, bukan ambisi kosong."
+  },
+  {
+    "id": "kb_054",
+    "category": "Perilaku",
+    "word": "Sare",
+    "kerata_basa": "Sabar rena",
+    "philosophy": "Tidur = Sabar dan rela. Sleeping is letting go. Susah tidur = susah melepas kontrol/kekhawatiran."
+  },
+  {
+    "id": "kb_055",
+    "category": "Peran Sosial",
+    "word": "Pemimpin",
+    "kerata_basa": "Pamilih sing paling urip",
+    "philosophy": "Pemilih yang paling hidup/sadar. Pemimpin dipilih oleh yang aware. Kalau rakyat bodoh, pemimpinnya buruk."
+  },
+  {
+    "id": "kb_056",
+    "category": "Benda & Makanan",
+    "word": "Sega",
+    "kerata_basa": "Sak ega-ega kudu mangan",
+    "philosophy": "Nasi. Sebombastis apapun, tetap butuh makan. Reminder kerendahan hati: manusia tetap makhluk biologis."
+  },
+  {
+    "id": "kb_057",
+    "category": "Benda & Makanan",
+    "word": "Banyu",
+    "kerata_basa": "Iba ning ngayun-ayun",
+    "philosophy": "Air = Kasihan tapi mengalir. Empati tanpa tenggelam dalam masalah orang. Flow like water."
+  },
+  {
+    "id": "kb_058",
+    "category": "Perilaku",
+    "word": "Sinau",
+    "kerata_basa": "Sinio ben tau",
+    "philosophy": "Kesini biar tahu. Belajar itu aktif menjemput ilmu (mendekat), bukan pasif menunggu."
+  },
+  {
+    "id": "kb_059",
+    "category": "Peran Sosial",
+    "word": "Ibu",
+    "kerata_basa": "Ibarating urip",
+    "philosophy": "Ibarat kehidupan. Ibu adalah source code kehidupan. Tanpa ibu, tidak ada hidup literal maupun metaforis."
+  },
+  {
+    "id": "kb_060",
+    "category": "Lingkungan",
+    "word": "Omah",
+    "kerata_basa": "Dumadi marga sahabad",
+    "philosophy": "Rumah = Tercipta karena persaudaraan. Bukan cuma struktur fisik, tapi ikatan yang membuat tempat jadi 'home'."
   }
 ]

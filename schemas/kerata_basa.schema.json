@@ -6,8 +6,13 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["category", "word", "kerata_basa", "philosophy"],
+    "required": ["id", "category", "word", "kerata_basa", "philosophy"],
     "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the entry (e.g., kb_001, kb_002)",
+        "pattern": "^kb_[0-9]{3}$"
+      },
       "category": {
         "type": "string",
         "description": "The category of the word (e.g., Anatomi, Social, etc.)",
