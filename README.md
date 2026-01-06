@@ -2,7 +2,7 @@
 
 ![Data License](https://img.shields.io/badge/Data%20License-CC0-green)
 ![Code License](https://img.shields.io/badge/Code%20License-MIT-blue)
-![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Build Status](https://img.shields.io/github/actions/workflow/status/annurdien/Kawruh/validate.yml?branch=main)
 ![PRs](https://img.shields.io/badge/PRs-welcome-orange)
 
 **Kawruh** (Javanese: *Knowledge*) is an open-source database of Javanese philosophy, metaphysics, and linguistic logic. 
@@ -22,18 +22,93 @@ All data is stored in the `data/` directory.
 
 ## 🚀 Usage
 
-You can use the raw JSON files directly or use the included scripts to generate SQL.
+### 🌐 Web Interface
+Visit the [interactive search interface](https://annurdien.github.io/Kawruh) to explore the database with real-time filtering.
 
-### Raw JSON
+### 📦 Node.js / JavaScript
 ```javascript
+// Using require (CommonJS)
 const paribasan = require('./data/paribasan.json');
-console.log(paribasan.find(p => p.category === 'Karma'));
+const karma = paribasan.filter(p => p.category === 'Karma');
+console.log(karma);
+
+// Using ES6 modules
+import kerataBasa from './data/kerata_basa.json' assert { type: 'json' };
+const anatomy = kerataBasa.filter(kb => kb.category === 'Anatomi');
 ```
 
-### Export to SQL
+### ⚛️ React / Next.js
+```jsx
+import { useEffect, useState } from 'react';
+
+function WisdomOfTheDay() {
+  const [wisdom, setWisdom] = useState(null);
+
+  useEffect(() => {
+    fetch('/data/paribasan.json')
+      .then(res => res.json())
+      .then(data => {
+        const random = data[Math.floor(Math.random() * data.length)];
+        setWisdom(random);
+      });
+  }, []);
+
+  return wisdom ? (
+    <div>
+      <h2>{wisdom.proverb}</h2>
+      <p>{wisdom.meaning}</p>
+    </div>
+  ) : <p>Loading...</p>;
+}
+```
+
+### 🐍 Python
+```python
+import json
+import random
+
+# Load and search
+with open('data/kerata_basa.json', 'r', encoding='utf-8') as f:
+    kerata = json.load(f)
+    anatomy = [k for k in kerata if k['category'] == 'Anatomi']
+    print(anatomy)
+
+# Random wisdom generator
+with open('data/sanepa.json', 'r', encoding='utf-8') as f:
+    sanepa = json.load(f)
+    print(random.choice(sanepa))
+```
+
+### 🔧 Command Line (jq)
+```bash
+# Find all karma-related proverbs
+cat data/paribasan.json | jq '.[] | select(.category | contains("Karma"))'
+
+# Count entries by category in Kerata Basa
+cat data/kerata_basa.json | jq 'group_by(.category) | map({category: .[0].category, count: length})'
+
+# Get random sanepa
+cat data/sanepa.json | jq '.[] | select(.phrase)' | shuf -n 1
+```
+
+### 🗄️ Export to SQL
 ```bash
 python3 scripts/export_sql.py
 # output: kawruh_dump.sql
+```
+
+### 📊 Data Analysis (Pandas)
+```python
+import pandas as pd
+
+# Load as DataFrame
+df = pd.read_json('data/paribasan.json')
+print(df.groupby('category').size())
+
+# Merge multiple datasets
+kerata = pd.read_json('data/kerata_basa.json')
+sanepa = pd.read_json('data/sanepa.json')
+combined = pd.concat([kerata, sanepa], ignore_index=True)
 ```
 
 ### 🤝 Contribution
@@ -45,4 +120,26 @@ We value quality over quantity.
 ### 📜 Philosophy
 Ngèlmu iku kalakoné kanthi laku. 
 Knowledge is only acquired through practice (implementation).
+
+---
+
+## 👥 Contributors
+
+Thank you to everyone who has contributed to preserving Javanese wisdom:
+
+<!-- Add your name here when you contribute! -->
+- **[Your Name]** - [Brief contribution]
+
+Want to be listed here? [Contribute to Kawruh!](CONTRIBUTING.md)
+
+---
+
+## 📄 License
+- **Data**: [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) - Public Domain
+- **Code**: [MIT License](LICENSE) - Free to use, modify, and distribute
+
+## 🔗 Links
+- [Live Search Interface](https://annurdien.github.io/Kawruh)
+- [Report Issues](https://github.com/annurdien/Kawruh/issues)
+- [Contribution Guidelines](CONTRIBUTING.md)
 

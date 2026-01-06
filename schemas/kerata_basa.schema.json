@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/annurdien/Kawruh/main/schemas/kerata_basa.schema.json",
+  "title": "Kerata Basa Schema",
+  "description": "JSON Schema for Javanese etymological philosophy (Kerata Basa/Jarwo Dosok)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["category", "word", "kerata_basa", "philosophy"],
+    "properties": {
+      "category": {
+        "type": "string",
+        "description": "The category of the word (e.g., Anatomi, Social, etc.)",
+        "minLength": 1
+      },
+      "word": {
+        "type": "string",
+        "description": "The Javanese word being analyzed",
+        "minLength": 1
+      },
+      "kerata_basa": {
+        "type": "string",
+        "description": "The etymological breakdown or acronym interpretation",
+        "minLength": 1
+      },
+      "philosophy": {
+        "type": "string",
+        "description": "The philosophical meaning derived from the breakdown",
+        "minLength": 1
+      }
+    },
+    "additionalProperties": false
+  },
+  "minItems": 1,
+  "uniqueItems": true
+}

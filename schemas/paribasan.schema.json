@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/annurdien/Kawruh/main/schemas/paribasan.schema.json",
+  "title": "Paribasan Schema",
+  "description": "JSON Schema for Javanese proverbs and axioms (Paribasan)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["proverb", "meaning", "category", "logic"],
+    "properties": {
+      "proverb": {
+        "type": "string",
+        "description": "The Javanese proverb",
+        "minLength": 1
+      },
+      "meaning": {
+        "type": "string",
+        "description": "The meaning or translation of the proverb",
+        "minLength": 1
+      },
+      "category": {
+        "type": "string",
+        "description": "The category (e.g., Karma, Ekonomi/Usaha, Keluarga, etc.)",
+        "minLength": 1
+      },
+      "logic": {
+        "type": "string",
+        "description": "The logical explanation or application of the proverb",
+        "minLength": 1
+      }
+    },
+    "additionalProperties": false
+  },
+  "minItems": 1,
+  "uniqueItems": true
+}

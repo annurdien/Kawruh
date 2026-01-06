@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/annurdien/Kawruh/main/schemas/sanepa.schema.json",
+  "title": "Sanepa Schema",
+  "description": "JSON Schema for Javanese paradoxical expressions (Sanepa)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["phrase", "literal_meaning", "actual_meaning", "philosophy"],
+    "properties": {
+      "phrase": {
+        "type": "string",
+        "description": "The Javanese paradoxical phrase",
+        "minLength": 1
+      },
+      "literal_meaning": {
+        "type": "string",
+        "description": "The literal translation/interpretation",
+        "minLength": 1
+      },
+      "actual_meaning": {
+        "type": "string",
+        "description": "The actual/intended meaning (opposite of literal)",
+        "minLength": 1
+      },
+      "philosophy": {
+        "type": "string",
+        "description": "The philosophical explanation of the paradox",
+        "minLength": 1
+      }
+    },
+    "additionalProperties": false
+  },
+  "minItems": 1,
+  "uniqueItems": true
+}

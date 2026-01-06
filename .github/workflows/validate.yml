@@ -1,0 +1,48 @@
+name: Validate Data
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        
+    - name: Validate JSON files
+      run: |
+        echo "🔍 Validating JSON syntax and structure..."
+        python3 scripts/validate.py
+        
+    - name: Check for valid UTF-8 encoding
+      run: |
+        echo "📝 Checking file encodings..."
+        for file in data/*.json; do
+          if ! iconv -f UTF-8 -t UTF-8 "$file" > /dev/null 2>&1; then
+            echo "❌ $file has invalid UTF-8 encoding"
+            exit 1
+          fi
+        done
+        echo "✅ All files have valid UTF-8 encoding"
+        
+    - name: Validate JSON Schema
+      run: |
+        pip install jsonschema
+        echo "🔬 Validating against JSON schemas..."
+        python3 scripts/validate_schemas.py
+        
+    - name: Summary
+      if: success()
+      run: |
+        echo "✅ All validation checks passed!"
+        echo "📊 Data files are valid and ready to use."

@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/annurdien/Kawruh/main/schemas/neptu.schema.json",
+  "title": "Neptu Schema",
+  "description": "JSON Schema for Javanese numerology system (Neptu/Weton)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["type", "name", "value"],
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": ["dina", "pasaran"],
+        "description": "Type of neptu: 'dina' for day of week, 'pasaran' for market cycle"
+      },
+      "name": {
+        "type": "string",
+        "description": "The name of the day or market cycle",
+        "minLength": 1
+      },
+      "value": {
+        "type": "integer",
+        "description": "The numerological value",
+        "minimum": 1,
+        "maximum": 9
+      },
+      "element": {
+        "type": "string",
+        "description": "Associated element (for dina/days)"
+      },
+      "direction": {
+        "type": "string",
+        "description": "Associated direction (for pasaran/market cycles)",
+        "enum": ["Timur", "Selatan", "Barat", "Utara", "Pusat"]
+      },
+      "trait": {
+        "type": "string",
+        "description": "Personality trait associated (for pasaran/market cycles)"
+      }
+    },
+    "additionalProperties": false,
+    "allOf": [
+      {
+        "if": {
+          "properties": { "type": { "const": "dina" } }
+        },
+        "then": {
+          "required": ["element"]
+        }
+      },
+      {
+        "if": {
+          "properties": { "type": { "const": "pasaran" } }
+        },
+        "then": {
+          "required": ["direction", "trait"]
+        }
+      }
+    ]
+  },
+  "minItems": 1
+}

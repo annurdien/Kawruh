@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawruh ꦏꦮꦿꦸꦃ - Javanese Philosophy Database</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .search-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        
+        .tab:hover {
+            background: #f0f0f0;
+        }
+        
+        .tab.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .results {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            min-height: 400px;
+        }
+        
+        .result-count {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .card-category {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        
+        .card-content {
+            color: #555;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        
+        .card-philosophy {
+            color: #333;
+            font-style: italic;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+        
+        .no-results h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.9;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kawruh ꦏꦮꦿꦸꦃ</h1>
+            <p class="tagline">Javanese Philosophy & Wisdom Database</p>
+        </header>
+        
+        <div class="search-box">
+            <input 
+                type="text" 
+                class="search-input" 
+                id="searchInput" 
+                placeholder="Search for wisdom... (e.g., 'karma', 'mulut', 'sweet')"
+                autocomplete="off"
+            >
+            <div class="filter-tabs">
+                <button class="tab active" data-filter="all">All</button>
+                <button class="tab" data-filter="kerata_basa">Kerata Basa</button>
+                <button class="tab" data-filter="paribasan">Paribasan</button>
+                <button class="tab" data-filter="sanepa">Sanepa</button>
+                <button class="tab" data-filter="neptu">Neptu</button>
+            </div>
+        </div>
+        
+        <div class="results">
+            <div class="result-count" id="resultCount">Loading data...</div>
+            <div id="resultsContainer">
+                <div class="loading">Loading wisdom...</div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Open Source • <a href="https://github.com/annurdien/Kawruh" target="_blank">GitHub Repository</a></p>
+            <p>Data License: CC0 • Code License: MIT</p>
+        </footer>
+    </div>
+
+    <script>
+        let allData = {
+            kerata_basa: [],
+            paribasan: [],
+            sanepa: [],
+            neptu: []
+        };
+        
+        let currentFilter = 'all';
+        
+        // Load all data files
+        async function loadData() {
+            try {
+                const [kerata, paribasan, sanepa, neptu] = await Promise.all([
+                    fetch('data/kerata_basa.json').then(r => r.json()),
+                    fetch('data/paribasan.json').then(r => r.json()),
+                    fetch('data/sanepa.json').then(r => r.json()),
+                    fetch('data/neptu.json').then(r => r.json())
+                ]);
+                
+                allData.kerata_basa = kerata.map(item => ({...item, type: 'kerata_basa'}));
+                allData.paribasan = paribasan.map(item => ({...item, type: 'paribasan'}));
+                allData.sanepa = sanepa.map(item => ({...item, type: 'sanepa'}));
+                allData.neptu = neptu.map(item => ({...item, type: 'neptu'}));
+                
+                displayResults();
+            } catch (error) {
+                document.getElementById('resultsContainer').innerHTML = 
+                    '<div class="no-results"><h3>Error loading data</h3><p>Please ensure data files are available.</p></div>';
+            }
+        }
+        
+        // Search function
+        function search(query) {
+            query = query.toLowerCase().trim();
+            
+            let results = [];
+            
+            if (currentFilter === 'all' || currentFilter === 'kerata_basa') {
+                results = results.concat(allData.kerata_basa.filter(item => 
+                    (item.word && item.word.toLowerCase().includes(query)) ||
+                    (item.kerata_basa && item.kerata_basa.toLowerCase().includes(query)) ||
+                    (item.philosophy && item.philosophy.toLowerCase().includes(query)) ||
+                    (item.category && item.category.toLowerCase().includes(query))
+                ));
+            }
+            
+            if (currentFilter === 'all' || currentFilter === 'paribasan') {
+                results = results.concat(allData.paribasan.filter(item =>
+                    (item.proverb && item.proverb.toLowerCase().includes(query)) ||
+                    (item.meaning && item.meaning.toLowerCase().includes(query)) ||
+                    (item.logic && item.logic.toLowerCase().includes(query)) ||
+                    (item.category && item.category.toLowerCase().includes(query))
+                ));
+            }
+            
+            if (currentFilter === 'all' || currentFilter === 'sanepa') {
+                results = results.concat(allData.sanepa.filter(item =>
+                    (item.phrase && item.phrase.toLowerCase().includes(query)) ||
+                    (item.literal_meaning && item.literal_meaning.toLowerCase().includes(query)) ||
+                    (item.actual_meaning && item.actual_meaning.toLowerCase().includes(query)) ||
+                    (item.philosophy && item.philosophy.toLowerCase().includes(query))
+                ));
+            }
+            
+            if (currentFilter === 'all' || currentFilter === 'neptu') {
+                results = results.concat(allData.neptu.filter(item =>
+                    (item.name && item.name.toLowerCase().includes(query)) ||
+                    (item.element && item.element.toLowerCase().includes(query)) ||
+                    (item.trait && item.trait.toLowerCase().includes(query))
+                ));
+            }
+            
+            return results;
+        }
+        
+        // Display results
+        function displayResults(query = '') {
+            const container = document.getElementById('resultsContainer');
+            const countEl = document.getElementById('resultCount');
+            
+            let results;
+            
+            if (query) {
+                results = search(query);
+            } else {
+                // Show all results for current filter
+                if (currentFilter === 'all') {
+                    results = [
+                        ...allData.kerata_basa,
+                        ...allData.paribasan,
+                        ...allData.sanepa,
+                        ...allData.neptu
+                    ];
+                } else {
+                    results = allData[currentFilter];
+                }
+            }
+            
+            countEl.textContent = `${results.length} ${results.length === 1 ? 'result' : 'results'} found`;
+            
+            if (results.length === 0) {
+                container.innerHTML = '<div class="no-results"><h3>No results found</h3><p>Try a different search term or filter.</p></div>';
+                return;
+            }
+            
+            container.innerHTML = results.map(item => renderCard(item)).join('');
+        }
+        
+        // Render card based on type
+        function renderCard(item) {
+            switch(item.type) {
+                case 'kerata_basa':
+                    return `
+                        <div class="card">
+                            <span class="card-category">${item.category || 'Kerata Basa'}</span>
+                            <div class="card-title">${item.word}</div>
+                            <div class="card-content"><strong>Kerata Basa:</strong> ${item.kerata_basa}</div>
+                            <div class="card-philosophy">${item.philosophy}</div>
+                        </div>
+                    `;
+                case 'paribasan':
+                    return `
+                        <div class="card">
+                            <span class="card-category">${item.category || 'Paribasan'}</span>
+                            <div class="card-title">${item.proverb}</div>
+                            <div class="card-content"><strong>Meaning:</strong> ${item.meaning}</div>
+                            <div class="card-philosophy">${item.logic}</div>
+                        </div>
+                    `;
+                case 'sanepa':
+                    return `
+                        <div class="card">
+                            <span class="card-category">Sanepa (Paradox)</span>
+                            <div class="card-title">${item.phrase}</div>
+                            <div class="card-content"><strong>Literal:</strong> ${item.literal_meaning}</div>
+                            <div class="card-content"><strong>Actual:</strong> ${item.actual_meaning}</div>
+                            <div class="card-philosophy">${item.philosophy}</div>
+                        </div>
+                    `;
+                case 'neptu':
+                    return `
+                        <div class="card">
+                            <span class="card-category">${item.type === 'dina' ? 'Day' : 'Pasaran'}</span>
+                            <div class="card-title">${item.name}</div>
+                            <div class="card-content"><strong>Value:</strong> ${item.value}</div>
+                            ${item.element ? `<div class="card-content"><strong>Element:</strong> ${item.element}</div>` : ''}
+                            ${item.direction ? `<div class="card-content"><strong>Direction:</strong> ${item.direction}</div>` : ''}
+                            ${item.trait ? `<div class="card-content"><strong>Trait:</strong> ${item.trait}</div>` : ''}
+                        </div>
+                    `;
+                default:
+                    return '';
+            }
+        }
+        
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            displayResults(e.target.value);
+        });
+        
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                e.target.classList.add('active');
+                currentFilter = e.target.dataset.filter;
+                const query = document.getElementById('searchInput').value;
+                displayResults(query);
+            });
+        });
+        
+        // Initialize
+        loadData();
+    </script>
+</body>
+</html>
