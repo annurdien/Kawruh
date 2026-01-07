@@ -10,5 +10,6 @@
 1. Fork the repo.
 2. Create a branch: `git checkout -b add-guru-philosophy`.
 3. Add your data to the relevant `.json` file.
-4. Run validation: `python3 scripts/validate.py`.
-5. Push and PR.
+4. Install dependencies: `pip install -r requirements.txt`.
+5. Run validation: `python3 scripts/validate.py`.
+6. Push and PR.

@@ -1,5 +1,7 @@
 # Kawruh ꦏꦮꦿꦸꦃ
 
+![Kawruh Header](header.png)
+
 ![Data License](https://img.shields.io/badge/Data%20License-CC0-green)
 ![Code License](https://img.shields.io/badge/Code%20License-MIT-blue)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/annurdien/Kawruh/validate.yml?branch=main)

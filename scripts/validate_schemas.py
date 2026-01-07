@@ -48,15 +48,11 @@ def validate_all_schemas():
         except Exception as e:
             print(f"❌ Error validating {data_file.name}: {e}")
             has_error = True
-    
-    if validated_count == 0:
-        print("⚠️  No data files validated")
-    
+
     return not has_error
 
 if __name__ == "__main__":
     if validate_all_schemas():
-        print("🎉 All schema validations passed!")
         sys.exit(0)
     else:
         sys.exit(1)

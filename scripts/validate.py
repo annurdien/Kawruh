@@ -2,6 +2,10 @@ import json
 import os
 import sys
 
+# Ensure we can import from the same directory
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from validate_schemas import validate_all_schemas
+
 FILES = [
     'data/kerata_basa.json',
     'data/sanepa.json',
@@ -56,6 +60,10 @@ def main():
             print(f"❌ JSON Syntax Error in {file_path}: {e}")
             has_error = True
             
+    print("\n🔍 Running Schema Validation...")
+    if not validate_all_schemas():
+        has_error = True
+
     if has_error:
         sys.exit(1)
     else:

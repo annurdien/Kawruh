@@ -1,1 +1,28 @@
+# Environments
 .venv/
+venv/
+env/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated Files
+kawruh_dump.sql
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor Directories
+.vscode/
+.idea/
+
+# JavaScript / Node (if used later)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+build/
