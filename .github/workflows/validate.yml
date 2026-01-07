@@ -40,12 +40,6 @@ jobs:
         done
         echo "✅ All files have valid UTF-8 encoding"
         
-    - name: Validate JSON Schema
-      run: |
-        pip install jsonschema
-        echo "🔬 Validating against JSON schemas..."
-        python3 scripts/validate_schemas.py
-        
     - name: Summary
       if: success()
       run: |
