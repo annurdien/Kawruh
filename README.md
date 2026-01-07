@@ -1,6 +1,6 @@
 # Kawruh ꦏꦮꦿꦸꦃ
 
-![Kawruh Header](header.png)
+![Kawruh Header](header.jpeg)
 
 ![Data License](https://img.shields.io/badge/Data%20License-CC0-green)
 ![Code License](https://img.shields.io/badge/Code%20License-MIT-blue)
